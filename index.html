@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cardápio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-bar">
+    <h1>CARDÁPIO</h1>
+    <img src="imgs/logo.png" alt="Logo do restaurante">
+</header>
+
+<section class="cardapio">
+
+    <!-- =============================== -->
+    <!-- ENTRADAS -->
+    <!-- =============================== -->
+    <div class="prato-container">  
+        <input type="checkbox" id="entradas" class="toggle">
+        <label for="entradas" class="prato">
+        <img src="imgs/entrada.jpeg" alt="casquinha">
+            <h2>Entradas</h2>
+            <p>Pequenos pratos, grandes sabores.</p>
+        </label>
+        <div class="subcard-wrapper">
+
+            <!-- Submenu 1 -->
+            <div class="subcard">
+                <input type="checkbox" id="entrada-mar">
+                <label for="entrada-mar" class="subcard-title">Com frutos do Mar</label>
+
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr> -->                       
+                        <tr><td>Casquinha de Siri</td><td>R$ 32</td></tr>
+                        <tr><td>Bolinho de Bacalhau (16 unidades)</td><td>R$ 69</td></tr>
+                        <tr><td>Risoles de Camarão (10 unidades)</td><td>R$ 30</td></tr>
+                        <tr><td>Gorjão de Tilápia (450g)</td><td>R$ 70</td></tr>
+                        <tr><td>Camarão no Bafo</td><td>R$ 80</td></tr>
+                        <tr><td>Camarão à Milanesa</td><td>R$ 90</td></tr>
+                        <tr><td>Robalinho</td><td>R$ 95</td></tr>
+                        <tr><td>Filé de Pescadinha</td><td>R$ 85</td></tr>
+                        <tr><td>Vinagrate de Sururu</td><td>R$ 50</td></tr>
+                        <tr><td>Vinagrete de Ostra</td><td>R$ 50</td></tr>
+                        <tr><td>Moquequinha de Siri</td><td>R$ 80</td></tr>
+                        <tr><td>Moquequinha de Camarão</td><td>R$ 70</td></tr>
+                        <tr><td>Moquequinha de Sururu</td><td>R$ 65</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Submenu 2 -->
+            <div class="subcard">
+                <input type="checkbox" id="entrada-diversas">
+                <label for="entrada-diversas" class="subcard-title">Diversas</label>
+
+                <div class="subcard-content">
+                    <table>
+                         <!--<tr><th></th><th>Preço</th></tr> -->
+                        <tr><td>Kieber (20 unidades)</td><td>R$ 90</td></tr>
+                        <tr><td>Batata Frita (350g)</td><td>R$ 35</td></tr>
+                        <tr><td>Carne de Sol com Aipim</td><td>R$ 90</td></tr>
+                        <tr><td>Prato Kids (carne de boi ou frango)</td><td>R$ 40</td></tr>
+                        <tr><td>Salada Mista (Alface, tomate, palmito e azeitonas)</td><td>R$ 90</td></tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =============================== -->
+    <!-- MOQUECAS -->
+    <!-- =============================== -->
+    <div class="prato-container">
+        <input type="checkbox" id="moquecas" class="toggle">
+        <label for="moquecas" class="prato">
+            <img src="imgs/moqueca.jpeg" alt="moqueca">
+            <h2>Moquecas</h2>
+            <p>Moquecas tradicionais da casa.</p>
+        </label>
+
+        <div class="subcard-wrapper">
+
+            <!-- Subcard 1 -->
+            <div class="subcard">
+                <input type="checkbox" id="moq-simples">
+                <label for="moq-simples" class="subcard-title">Moquecas Simples</label>
+                <div class="subcard-content">
+                    <table>
+                    <!--<tr><th></th><th>Preço</th></tr>-->
+                        <tr><td>Badejo</td><td>R$ 175</td></tr>
+                        <tr><td>Robalo</td><td>R$ 175</td></tr>
+                        <tr><td>Siri Desfiado</td><td>R$ 170</td></tr>
+                        <tr><td>Dourado</td><td>R$ 160</td></tr>
+                        <tr><td>Cação</td><td>R$ 160</td></tr>
+                        <tr><td>Sururu</td><td>R$ 150</td></tr>
+                        <tr><td>Lagosta</td><td>R$ 200</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Subcard 2 -->
+            <div class="subcard">
+                <input type="checkbox" id="moq-camarao">
+                <label for="moq-camarao" class="subcard-title">Moquecas com Camarão Pequeno</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr>-->
+                        <tr><td>Badejo</td><td>R$ 200</td></tr>
+                        <tr><td>Robalo</td><td>R$ 200</td></tr>
+                        <tr><td>Siri Desfiado</td><td>R$ 180</td></tr>
+                        <tr><td>Dourado</td><td>R$ 175</td></tr>
+                        <tr><td>Cação</td><td>R$ 175</td></tr>
+                        <tr><td>Camarão pequeno</td><td>R$ 155</td></tr>
+                    </table>
+                </div>
+
+            <!-- Subcard 3 -->
+            <div class="subcard">
+                <input type="checkbox" id="moq-VM">
+                <label for="moq-VM" class="subcard-title">Moquecas com Camarão VM</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr>-->
+                        <tr><td>Badejo</td><td>R$ 255</td></tr>
+                        <tr><td>Robalo</td><td>R$ 255</td></tr>
+                        <tr><td>Siri Desfiado</td><td>R$ 210</td></tr>
+                        <tr><td>Dourado</td><td>R$ 230</td></tr>
+                        <tr><td>Cação</td><td>R$ 230</td></tr>
+                        <tr><td>Camarão VM</td><td>R$ 270</td></tr>
+                        <tr><td>Lagosta com Camarão VM</td><td>R$ 280</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Subcard 4 -->
+            <div class="subcard">
+                <input type="checkbox" id="moq-VG">
+                <label for="moq-VG" class="subcard-title">Moquecas com Camarão VG</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr>-->
+                        <tr><td>Badejo</td><td>R$ 280</td></tr>
+                        <tr><td>Robalo</td><td>R$ 280</td></tr>
+                        <tr><td>Siri Desfiado</td><td>R$ 245</td></tr>
+                        <tr><td>Dourado</td><td>R$ 250</td></tr>
+                        <tr><td>Cação</td><td>R$ 250</td></tr>
+                        <tr><td>Camarão VG</td><td>R$ 315</td></tr>
+                        <tr><td>Lagosta com Camarão VG</td><td>R$ 300</td></tr>
+                    </table>
+                </div>
+            </div>
+             </div>
+            <p id="italic">*Todas as moquecas acompanham: arroz, pirão e moquequinha de banana.</p>
+            </div>
+       
+    </div>
+
+    <!-- =============================== -->
+    <!-- ESPECIALIDADES -->
+    <!-- =============================== -->
+    <div class="prato-container">
+        <input type="checkbox" id="especialidades" class="toggle">
+        <label for="especialidades" class="prato">
+            <img src="imgs/macarrão.jpeg" alt="especialidades">
+            <h2>Especialidades</h2>
+            <p>Pratos únicos da casa.</p>
+        </label>
+
+        <div class="subcard-wrapper">
+
+             <div class="subcard">
+                <input type="checkbox" id="esp-1">
+                <label for="esp-1" class="subcard-title">Especiais da Casa</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr> -->
+                        <tr><td>Torta Capixaba</td><td>R$ 200</td></tr>
+                        <tr><td>Torta de Bacalhau com Palmito</td><td>R$ 220</td></tr>
+                        <tr><td>Camarão com Requeijão</td><td>R$ 165</td></tr>
+                        <tr><td>Camarão Médio com Requeijão</td><td>R$ 220</td></tr>
+                        <tr><td>Bobó de Camarão</td><td>R$ 175</td></tr>
+                        <tr><td>Bobó de Camarão Médio</td><td>R$ 205</td></tr>
+                        <tr><td>Espaguete com Camarão</td><td>R$ 170</td></tr>
+                        <tr><td>Espaguete com Frutos do Mar</td><td>R$ 170</td></tr>
+                        <tr><td>Estrogonofe de Camarão</td><td>R$ 175</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="subcard">
+                <input type="checkbox" id="esp-2">
+                <label for="esp-2" class="subcard-title">Arroz com Frutos do Mar</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr> -->
+                        <tr><td>Arroz com Mariscos</td><td>R$ 175</td></tr>
+                        <tr><td>Arroz com Camarão</td><td>R$ 165</td></tr>
+                        <tr><td>Arroz com Camarão VM</td><td>R$ 180</td></tr>
+                        <tr><td>Arroz com Polvo</td><td>R$ 170</td></tr>
+                        <tr><td>Arroz com Polvo e Camarão VM</td><td>R$ 200</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="subcard">
+                <input type="checkbox" id="esp-3">
+                <label for="esp-3" class="subcard-title">Mariscadas</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr> -->
+                        <tr><td>Mariscada à Moda Teresão</td><td>R$ 220</td></tr>
+                        <tr><td>Mariscada Simples</td><td>R$ 175</td></tr>
+                        <tr><td>Mariscada Gratinada</td><td>R$ 205</td></tr>
+                    </table>
+                </div>
+            </div>
+       
+            <div class="subcard">
+                <input type="checkbox" id="esp-4">
+                <label for="esp-4" class="subcard-title">Tamanho Família</label>
+                <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr> -->
+                        <tr><td>Porção Família de Pescadinha</td><td>R$ 235</td></tr>
+                        <tr><td>Porção Família de Peroá</td><td>R$ 235</td></tr>
+                        <tr><td>Porção Família de Tilápia</td><td>R$ 235</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- =============================== -->
+    <!-- COMBOS -->
+    <!-- =============================== -->
+    <div class="prato-container">  
+        <input type="checkbox" id="combos" class="toggle">
+        <label for="combos" class="prato">
+        <img src="imgs/MoquecaFogao.jpeg" alt="combos">
+            <h2>Combos</h2>
+            <p>Combos especiais.</p>
+        </label>
+        <div class="subcard-wrapper">
+
+            <!-- Submenu 1 -->
+            <div class="subcard">
+                <input type="checkbox" id="combo-Moxuara">
+                <label for="combo-Moxuara" class="subcard-title">Combo Moxuara</label>
+
+                <div class="subcard-content">
+                    <table>
+                        <tr><td>Moqueca de Robalo</td><td></td></tr>
+                        <tr><td>Arroz e Pirão</td><td></td></tr>
+                        <tr><td>+ Jarra de Suco</td><td></td></tr>
+                        <tr><th>Valor</th><th>R$ 185</th></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Submenu 2 -->
+            <div class="subcard">
+                <input type="checkbox" id="combo-MestreAlvaro">
+                <label for="combo-MestreAlvaro" class="subcard-title">Combo Mestre Álvaro</label>
+
+                <div class="subcard-content">
+                    <table>
+                       <tr><td>Torta Capixaba</td><td></td></tr>
+                        <tr><td>Arroz e Moquequinha de banana</td><td></td></tr>
+                        <tr><td>+ Coca-Cola 1,5L</td><td></td></tr>
+                        <tr><th>Valor</th><th>R$ 210</th></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =============================== -->
+    <!-- GUARNIÇÕES -->
+    <!-- =============================== -->
+    <div class="prato-container">
+        <input type="checkbox" id="guarnicoes" class="toggle">
+        <label for="guarnicoes" class="prato">
+            <img src="imgs/guarnicoes.jpeg" alt="guarnicoes">
+            <h2>Guarnições</h2>
+            <p>Acompanhamentos saborosos.</p>
+        </label>
+
+        <div class="subcard-wrapper">
+  <div class="subcard">
+    <input type="checkbox" id="guarnicoes-sub">
+    <label for="guarnicoes-sub" class="subcard-title">Guarnições</label>
+    <div class="subcard-content">
+                    <table>
+                        <!--<tr><th></th><th>Preço</th></tr> -->
+                        <tr><td>Arroz</td><td>R$ 14</td></tr>
+                        <tr><td>Pirão</td><td>R$ 14</td></tr>
+                        <tr><td>Moquequinha de Banana</td><td>R$ 15</td></tr>
+                        <tr><td>Vinagrete</td><td>R$ 8</td></tr>
+                        <tr><td>Pão</td><td>R$ 5</td></tr>
+                        <tr><td>Farofa</td><td>R$ 7</td></tr>
+                        <tr><td>Banana Frita</td><td>R$ 15</td></tr>
+                    </table>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
